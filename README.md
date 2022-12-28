@@ -1,16 +1,9 @@
 # flutter_time_schedule_picker
 
-A new Flutter project.
+Pick schedule time and dispay it on screen.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Use below three plugins-
+1. intl: ^0.17.0
+2. table_calendar: ^3.0.7
+3. flutter_svg: ^1.0.3
