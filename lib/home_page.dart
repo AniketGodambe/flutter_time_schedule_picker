@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_time_schedule_picker/constant.dart';
 import 'package:intl/intl.dart';
 
 class HomePage extends StatefulWidget {
@@ -59,14 +60,14 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               // mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Center(
+                Center(
                   child: CommonText(
                     text: 'Select time',
-                    color: Colors.black,
-                    fontSize: 20,
+                    color: kblack,
+                    fontSize: f1,
                   ),
                 ),
-                const SizedBox(height: 20),
+                kheight20,
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -76,7 +77,7 @@ class _HomePageState extends State<HomePage> {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(
-                            color: Colors.black,
+                            color: kblack,
                           )),
                       child: GestureDetector(
                         onTap: () => selectStartTime(),
@@ -85,29 +86,29 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             Text(
                               startTime.format(context).toString(),
-                              style: const TextStyle(fontSize: 18),
+                              style: TextStyle(fontSize: f1),
                             ),
-                            const Icon(
+                            Icon(
                               Icons.access_time_outlined,
-                              color: Colors.black,
+                              color: kblack,
                             )
                           ],
                         ),
                       ),
                     ),
-                    const SizedBox(width: 40),
-                    const CommonText(
+                    kheight40,
+                    CommonText(
                       text: 'To',
                       color: Colors.grey,
-                      fontSize: 18,
+                      fontSize: f1,
                     ),
-                    const SizedBox(width: 40),
+                    kheight40,
                     Container(
                       padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(
-                            color: Colors.black,
+                            color: kblack,
                           )),
                       child: GestureDetector(
                         onTap: () => selectEndTime(),
@@ -116,11 +117,11 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             Text(
                               endTime.format(context).toString(),
-                              style: const TextStyle(fontSize: 18),
+                              style: TextStyle(fontSize: f1),
                             ),
-                            const Icon(
+                            Icon(
                               Icons.access_time_outlined,
-                              color: Colors.black,
+                              color: kblack,
                             )
                           ],
                         ),
@@ -132,15 +133,15 @@ class _HomePageState extends State<HomePage> {
                 CommonText(
                     text:
                         "Your session will start at ${startTime.format(context).toString()} ",
-                    fontSize: 18,
-                    color: Colors.black),
+                    fontSize: f1,
+                    color: kblack),
                 const SizedBox(height: 5),
                 CommonText(
                     text:
                         "and will end at ${endTime.format(context).toString()}",
-                    fontSize: 18,
-                    color: Colors.black),
-                const SizedBox(height: 20),
+                    fontSize: f1,
+                    color: kblack),
+                kheight20
               ],
             ),
           ),
